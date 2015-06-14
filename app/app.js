@@ -13,7 +13,13 @@ angular.module('calcApp', []).controller('CalcController',
 
       $scope.evaluateExpression = function () {
         $scope.lastExpression = $scope.currentExpression + "=";
-        $scope.currentExpression = eval($scope.currentExpression);
+
+        if($scope.currentExpression === "") {
+          $scope.currentExpression = eval(0);
+        }
+        else {
+          $scope.currentExpression = eval($scope.currentExpression);
+        }
       }
 
       $scope.removeFromExpression = function () {

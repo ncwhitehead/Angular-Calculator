@@ -19,30 +19,34 @@
           <p name="currentExpression">{{currentExpression}}</p>
         </div>
         <div class="calcBody">
-          <button class="operatorButton" name="modulusOperator" ng-click="buildExpression('%')">%</button>
-          <button class="operatorButton" name="additionOperator" ng-click="buildExpression('+')">+</button>
-          <button class="operatorButton" name="minusOperator" ng-click="buildExpression('-')">-</button>
+          <button class="numberButton" name="numSeven" ng-click="buildExpression(7)">7</button>
+          <button class="numberButton" name="numEight" ng-click="buildExpression(8)">8</button>
+          <button class="numberButton" name="numNine" ng-click="buildExpression(9)">9</button>
+          <button class="operatorButton" name="clearCalculation" ng-click="clearExpression()">C</button>
+          <button class="operatorButton" name="removeLastCharacter" ng-click="removeFromExpression()">&#8592;</button>
+
+          <br />
+
+          <button class="numberButton" name="numFour" ng-click="buildExpression(4)">4</button>
+          <button class="numberButton" name="numFive" ng-click="buildExpression(5)">5</button>
+          <button class="numberButton" name="numSix" ng-click="buildExpression(6)">6</button>
           <button class="operatorButton" name="multiplicationOperator" ng-click="buildExpression('*')">*</button>
           <button class="operatorButton" name="divisionOperator" ng-click="buildExpression('/')">/</button>
-          <button class="clearButton" name="clearCalculation" ng-click="clearExpression()">C</button>
 
           <br />
 
           <button class="numberButton" name="numOne" ng-click="buildExpression(1)">1</button>
           <button class="numberButton" name="numTwo" ng-click="buildExpression(2)">2</button>
           <button class="numberButton" name="numThree" ng-click="buildExpression(3)">3</button>
-          <button class="numberButton" name="numFour" ng-click="buildExpression(4)">4</button>
-          <button class="numberButton" name="numFive" ng-click="buildExpression(5)">5</button>
-          <button class="removeButton" name="removeLastCharacter" ng-click="removeFromExpression()">&#8592;</button>
+          <button class="operatorButton" name="additionOperator" ng-click="buildExpression('+')">+</button>
+          <button class="operatorButton" name="minusOperator" ng-click="buildExpression('-')">-</button>
 
           <br />
 
-          <button class="numberButton" name="numSix" ng-click="buildExpression(6)">6</button>
-          <button class="numberButton" name="numSeven" ng-click="buildExpression(7)">7</button>
-          <button class="numberButton" name="numEight" ng-click="buildExpression(8)">8</button>
-          <button class="numberButton" name="numNine" ng-click="buildExpression(9)">9</button>
           <button class="numberButton" name="numZero" ng-click="buildExpression(0)">0</button>
-          <button class="equalButton" name="equalOperator" ng-click="evaluateExpression()">=</button>
+          <button class="operatorButton" name="floatingPointButton" ng-click="buildExpression('.')">.</button>
+          <button class="operatorButton" id="equalOperator" name="equalOperator" ng-click="evaluateExpression()">=</button>
+          <button class="operatorButton" name="modulusOperator" ng-click="buildExpression('%')">%</button>
 
           <br />
         </div>

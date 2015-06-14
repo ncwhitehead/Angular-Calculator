@@ -2,6 +2,7 @@ angular.module('calcApp', []).controller('CalcController',
   function($scope) {
       $scope.currentExpression = "";
       $scope.lastExpression = "";
+      $scope.expressionBottom = false;
 
       $scope.buildExpression = function (operand) {
         $scope.currentExpression += operand.toString();
@@ -20,6 +21,8 @@ angular.module('calcApp', []).controller('CalcController',
         else {
           $scope.currentExpression = eval($scope.currentExpression);
         }
+
+        $scope.expressionBottom = true;
       }
 
       $scope.removeFromExpression = function () {

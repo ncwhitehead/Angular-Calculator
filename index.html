@@ -11,7 +11,7 @@
   </head>
   <body ng-controller="CalcController">
     <div>
-      <div class="lastDisplayed">
+      <div ng-class="{ 'lastDisplayed' : expressionBottom }">
         <p name="lastExpression">{{lastExpression}}</p>
       </div>
       <div class="calMainFrame">

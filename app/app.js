@@ -15,11 +15,16 @@ angular.module('calcApp', []).controller('CalcController',
       $scope.evaluateExpression = function () {
         $scope.lastExpression = $scope.currentExpression + "=";
 
-        if($scope.currentExpression === "") {
-          $scope.currentExpression = eval(0).toString();
+        try {
+          if($scope.currentExpression === "") {
+            $scope.currentExpression = eval(0).toString();
+          }
+          else {
+            $scope.currentExpression = eval($scope.currentExpression).toString();
+          }
         }
-        else {
-          $scope.currentExpression = eval($scope.currentExpression).toString();
+        catch (err) {
+          $scope.lastExpression = "Error in evaluating expression.";
         }
 
         $scope.expressionBottom = true;

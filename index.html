@@ -16,7 +16,7 @@
       </div>
       <div class="calMainFrame">
         <div class="calcDisplay">
-          <p name="currentExpression">{{currentExpression}}</p>
+          <input type="text" class="currentExpression" name="currentExpression" ng-model="currentExpression" value="{{currentExpression}}"></input>
         </div>
         <div class="calcBody">
           <button class="numberButton" name="numSeven" ng-click="buildExpression(7)">7</button>

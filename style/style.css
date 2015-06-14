@@ -25,7 +25,7 @@
 }
 
 .calcDisplay {
-  height: 20px;
+  height: 40px;
 }
 
 .lastDisplayed {
@@ -34,4 +34,13 @@
   border-bottom-color: #00d544;
   max-width: 240px;
   margin-bottom: 5px;
+}
+
+.currentExpression {
+  margin-top: 10px;
+  width: 218px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid gray;
 }

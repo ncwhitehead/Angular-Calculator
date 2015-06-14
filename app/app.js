@@ -1,6 +1,6 @@
 angular.module('calcApp', []).controller('CalcController',
     function($scope) {
-        $scope.currentExpression = "";
+        $scope.currentExpression = "0";
         $scope.lastExpression = "";
 
         $scope.buildExpression = function (operand) {

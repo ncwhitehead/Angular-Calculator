@@ -3,7 +3,7 @@ angular.module('calcApp', []).controller('CalcController',
         $scope.currentExpression = "";
 
         $scope.buildExpression = function (operand) {
-          $scope.currentExpression += operand;
+          $scope.currentExpression += operand.toString();
         }
 
         $scope.clearExpression = function () {

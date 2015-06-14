@@ -1,6 +1,33 @@
 .calMainFrame {
-  max-width: 175px;
+  max-width: 220px;
   border-style: solid;
   border-width: 1px;
   border-color: lightgray;
+}
+
+#equalOperator {
+  width: 84px;
+  height: 30px;
+}
+
+.numberButton {
+  width: 40px;
+  height: 30px;
+  padding: 3px;
+  background-color: #eee;
+}
+
+.operatorButton {
+  width: 40px;
+  height: 30px;
+  padding: 3px;
+  background-color: #ff3f29;
+}
+
+.calcDisplay {
+  height: 20px;
+}
+
+.lastDisplayed {
+  height: 20px;
 }
